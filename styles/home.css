@@ -795,7 +795,7 @@ margin: 5% 0px 0px;
 
 .reserve_item{
   flex: 1;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 /* Form view to divide left and right sections */
 .reserve_view {
@@ -829,21 +829,46 @@ height: 20%;
 cursor:not-allowed;
 }
 .carbutton {
-background-color: rgb(27, 251, 187);
-
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-width: 99%;
-height: 40px;
-text-align: center;
-margin: 10px 7px;
-border-radius: 5px;
-font-weight: bold;
-color: black;
-cursor: pointer;
-padding: 0px 0px;
-&:hover{
-  background-color: rgb(117, 248, 211);
+  background-color: rgb(27, 251, 187);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 99%;
+  height: 40px;
+  text-align: center;
+  margin: 10px 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 0px 0px;
+  &:hover{
+    background-color: rgb(117, 248, 211);
+  }
 }
+.carbutton1 {
+  background-color: rgb(27, 251, 187);
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  margin: 20px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #2c6ddc;
+  color: #2c6ddc;
+  cursor: pointer;
+
+  /* background-color: rgb(27, 251, 187);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 99%;
+  height: 40px;
+  text-align: center;
+  margin: 10px 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 0px 0px; */
 }
 .reserve_wrapper button.buttonstyle{
 background-color: rgb(27, 251, 187);
@@ -1081,9 +1106,41 @@ width: 42%;
   }
   .reserve_wrapper fieldset{
     margin: auto;
+    width: 90%;
+  }
+  .reserve_wrapper h1{
+    display: none;
+  }
+  .reserve_wrapper h2{
+    font-size: 100%;
+  }
+  .reserve_wrapper input, .reserve_wrapper select {
+    font-size: 80%;
+    padding: 0px;
 
   }.reserve_info, .reserve_row{
     flex-direction: column;
+    padding: 0px;
+  }
+  .carbutton1{
+    background-color: rgb(27, 251, 187);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 99%;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    padding: 0px 0px;
+  }
+  
+  
+
+  .reserve_column{
+  width:100%;
+  
   }.ret_container{
     width: 80%;
   }
@@ -1155,5 +1212,6 @@ width: 42%;
     }
   }
 }
+
 
 
