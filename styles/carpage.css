@@ -66,11 +66,24 @@ h2{
       display: none;
     }
     .cell img{
-      display: none;
+      width: 80%;
+      height: 60%;
+    }
+    div.row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     div.cell{
-      width:200px;
-      height: 150px;
+      width:100%;
+      height: 400px;
+      padding: 5%;
+    }
+    .cell-front{
+      img{
+        float: right;
+      }
+      
     }
     .cell h3{
       font-size: 80%;
@@ -95,6 +108,7 @@ h2{
     justify-content: center;
     text-align: center;
     padding-bottom: 15px;
+    z-index: 10000;
   }
   .grid {
     display: table;
@@ -125,16 +139,17 @@ h2{
     
   }
 
-  .cell:hover .cell-inner{
+  .cell:hover .cell-inner, .cell:active .cell-inner{
     transition-delay: 250ms;
     transform: rotateY(180deg);
   }
+
   .cell-front, .cell-back{
     position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     
   }
 
@@ -145,7 +160,7 @@ h2{
     padding: 20px;
     box-shadow: 5px 10px 5px black;
   }
-  .cell-back {
+  .cell-back, .cell-back:active .cell-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;

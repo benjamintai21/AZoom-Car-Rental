@@ -177,11 +177,12 @@ i{
   margin: auto;
   margin-left: 60%;
   h1{
+    color: #252525;
     text-align: left;
     padding: 5px;
   }
   p{
-    color: #5e5a5a;
+    color: #393737;
     padding: 10px;
   }
 } 
@@ -226,7 +227,6 @@ i{
     padding: 50px;
 
   }
-
 .rental{
   max-width: 500px;
   height: auto;
@@ -239,7 +239,7 @@ i{
   align-items: right;
 
   background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(255,255,255,1)),
+    linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255)),
     url('rental.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -300,9 +300,7 @@ i{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  div{
-    margin: 0 5%;
-  }
+ 
   padding-bottom: 5px;
   p{
     padding-bottom: 5px;
@@ -321,11 +319,12 @@ i{
   width: 40%;
 }
 .p_view{
-  width:22%;
+  padding: 5%;
+  p{word-wrap: break-word;}
 }
 
 .pp{
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   a{
     padding-left: 20px;
@@ -333,12 +332,15 @@ i{
   }
   align-items: center;
 }
-.ppheader{
-  justify-content: flex-start;
+.c_content{
+  width: 100%;
 }
+/* .ppheader{
+
+} */
 .pplinks{
   display: flex;
-  margin-left: auto;
+
   justify-content: center;
 }
 
@@ -668,7 +670,7 @@ margin: 0px 60px;
   box-shadow: 2px 2px 55px;
   display: flex;
   flex-direction: column;
-  padding: 2%;
+  padding: 5%;
 }
 .f_bottom{
 display: flex;
@@ -727,9 +729,6 @@ margin: 5% 0px 0px;
   justify-content: center;
   width: 100%;
   text-align:center;
-}
-.wrapper12 button.buttonstyle, button.buttonstyle1{
-  font-size: 15px;
 }
 
 /* Reserve Page -----------------------------------------------------------------------------------------------------*/
@@ -879,7 +878,10 @@ color: black;
   
   width:60%;
   margin: auto;
-  
+.btm_ret{
+  display: flex;
+  flex-direction: row;
+}  
 }
 .t_container{
   display: flex;
@@ -1059,14 +1061,23 @@ width: 42%;
     margin: 0px;
   }
   .f_view {
-    width: 60%;
+    width: 80%;
   }
   .reserve_wrapper fieldset{
     margin: auto;
 
   }.reserve_info, .reserve_row{
     flex-direction: column;
-  }.top_map, .btm_map{
+  }.ret_container{
+    width: 80%;
+  }
+  .pp{
+    flex-direction: column;
+  }
+  .p_content{
+    flex-direction: column;
+  }
+  .top_map, .btm_map{
     flex-direction: column;
     align-items: center;
   }
@@ -1085,4 +1096,48 @@ width: 42%;
   .c_container_btm{
     flex-direction: column;
   }
+  .about_wrapper{
+    height: 100%;
+    margin-top: 18%;
+  }
+  .about_container1{
+    width: 90%;
+    padding: 3%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    img{
+      width: 95%;
+    }
+    p{
+      font-size: 75%;
+      line-height: 160%;
+      padding: 1%;
+      
+    }
+    .a_left, .a1_left, .a_right, .a1_right, .a2_left, .a2_right{
+      width: 100%;
+      height: 100%;
+    }
+    .a_right, .a1_left, .a2_right{
+      text-align: center;
+      padding: 1%;
+    }
+    .a1_left{
+      order: 2;
+    }
+    .a1_left{
+      order: 1;
+    }
+    
+  }
+  .about_container2{
+    flex-direction: row;
+    align-items: center;
+    img{
+      width:100%;
+    }
+  }
 }
+
+
