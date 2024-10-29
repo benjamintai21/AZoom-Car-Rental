@@ -13,7 +13,7 @@
     <script src="script/script.js"></script>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMQ41SvJ3ohEFJFal3SBFq9lBQhdK0L8E&callback=myMap"></script>
-    
+
     <style>
             .map_wrapper{
                 padding-top: 6%;
@@ -23,8 +23,7 @@
                 text-align: left;
             }
             .map_container{
-                width:40%;
-                margin: auto;
+
                 display: flex;
                 flex-direction: column ;
                 justify-content: center;
@@ -32,7 +31,7 @@
             .top_map, .btm_map{
                 padding: 10px;
                 width:100%;
-                height: 100%;
+
                 display: flex;
                 justify-content: center;
             }
@@ -41,10 +40,10 @@
                 height: 320px;
             }
             .map_left{
-                width:60%;
+                width:100%;
             }
             .map_right{
-                width:50%;
+                width:100%;
                 padding: 5%;
             }
     </style>
@@ -57,15 +56,14 @@
                 <img src="images/logo-transparent-svg3.svg" class="logo" onclick="window.location.href='HomePage.html'">
             </div>
             <div class="nav-content">
-                <a href="HomePage.html" target="_self"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="CarPage.html" target="_self"><i class="fa-solid fa-car"></i> Cars</a>
-            
-            
-                <a href="LocateUsPage.html" target="_self" class="active"><i class="fa-regular fa-compass"></i> Locate Us</a>
+                <a href="HomePage.html" id="home" target="_self"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="CarPage.html" id="cars" target="_self"><i class="fa-solid fa-car"></i> <span>Cars</span></a>
+                
+                <a href="LocateUsPage.html" id="locate" target="_self" class="active"><i class="fa-regular fa-compass"></i> <span>Locate Us</span></a>
                 <a href="index.html" id="login" target="_self"><i class="fa-solid fa-right-from-bracket"></i> <span>Sign Out</span></a>
             </div>
+            
         </nav>
-
     </section>
 
     <div class="loader">
@@ -130,7 +128,7 @@
                 <div class="p_view">
                     <p><u>Contact Us</u></p>
                     <p><b><a href="https://www.google.com" target="_blank"><i class="fa-solid fa-phone" target="_blank"></i> 61234567</a></b></p>
-                    <p><b><a href="mailto:azoomrental@helpdesk.org" target="_blank"><i class="fa-regular fa-envelope"></i> azoomrental@helpdesk.org</a></b></p>
+                    <p><b><a href="mailto:azoomrental@helpdesk.org" target="_blank"><i class="fa-regular fa-envelope"></i> azoom@helpdesk.org</a></b></p>
 
                     <p><b><a href="FAQPage.html" target="_blank">FAQS</a></b></p>
 
