@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISIT207 Assignment 2</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script/scroll.js"></script>
+    <script src="script/loader.js"></script>
+    <link rel="stylesheet" href="styles/loadingstyle.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <script src="script/form.js"></script>
+
+</head>
+
+<body>
+    <section>
+
+        <nav id="navbar" class="navbar">
+            <div class="tooltip">
+                <img src="images/logo-transparent-svg3.svg" class="logo" onclick="window.location.href='HomePage.html'">
+            </div>
+            <div class="nav-content">
+                <a href="HomePage.html" id="home" target="_self" class="active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="CarPage.html" id="cars" target="_self"><i class="fa-solid fa-car"></i> <span>Cars</span></a>
+                
+                <a href="LocateUsPage.html" id="locate" target="_self"><i class="fa-regular fa-compass"></i> <span>Locate Us</span></a>
+                <a href="LandingPage.html" id="login" target="_self"><i class="fa-solid fa-right-from-bracket"></i> <span>Sign Out</span></a>
+            </div>
+        </nav>
+
+    </section>
+
+    <div class="loader">
+        <p class="loading-text">Loading...</p>
+    </div>
+    <section>
+        <div class="wrapper12">
+            <div class="container12">
+                <div class="header">
+                    <h1><b><i class="fa-sharp fa-solid fa-user"></i> Welcome, <span id="currentuser">404: Error Found</span>!</b></h1>
+                </div>
+                
+                <div class="">
+                    <a href="CarPage.html"><button class="buttonstyle">Reserve a car</button></a>
+                    <a href="ReturnPage.html"><button class="buttonstyle1">Return a car</button></a>
+                </div>
+            </div>
+    </section>            
+    
+
+    <footer class="privacy_wrapper">
+        <hr>
+
+        <div class="privacy_container">
+
+            <div class="p_content">
+
+                <div class="view_top">
+                    <img src="images/logo-transparent-svg3.svg" height="100%" width="100%">
+                    
+                </div>
+                <div class="p_view">
+                    <p><u>Our Locations</u></p>
+                    <p>53 Ang Mo Kio Ave 3, Singapore 569933</p>
+                    <p>3155 Commonwealth Ave W, #05-35/36/37, Singapore 129588</p>
+                </div>
+
+                <div class="p_view">
+                    <p><u>Our Socials</u></p>
+                    <p><b><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></b></p>
+                    <p><b><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i> X (previously Twitter)</i></a></b></p>
+                    <p><b><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></b></p>
+                </div>
+
+                <div class="p_view">
+                    <p><u>Contact Us</u></p>
+                    <p><b><a href="https://www.google.com" target="_blank"><i class="fa-solid fa-phone" target="_blank"></i> 61234567</a></b></p>
+                    <p><b><a href="mailto:azoomrental@helpdesk.org" target="_blank"><i class="fa-regular fa-envelope"></i> azoomrental@helpdesk.org</a></b></p>
+
+                    <p><b><a href="FAQPage.html" target="_blank">FAQS</a></b></p>
+
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="c_content">
+                
+                <div class="pp">
+                    <div class="ppheader">
+                        <p>Copyright&copy; 2024 AZoom Car Rental. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="pplinks">
+                        
+                        <a href="PrivacyPage.html">Privacy Policy</a>|
+                        <a href="TermsPage.html">Terms of Use</a>|
+                        <a href="AboutPage.html">About</a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script>
+    loader();
+    getusername();
+</script>
+
+</body>
+</html>

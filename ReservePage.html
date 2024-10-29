@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISIT207 Assignment 2</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script src="script/scroll.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/form.js"></script>
+    <link rel="stylesheet" href="styles/loadingstyle.css">
+    <link rel="stylesheet" href="styles/reserve.css">
+
+
+</head>
+<body>
+    <section>
+
+        <nav id="navbar" class="navbar">
+            <div class="tooltip">
+                <img src="images/logo-transparent-svg3.svg" class="logo" onclick="window.location.href='HomePage.html'">
+            </div>
+            <div class="nav-content">
+                <a href="HomePage.html" id="home" target="_self"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="CarPage.html" id="cars" target="_self" class="active"><i class="fa-solid fa-car"></i> <span>Cars</span></a>
+                
+                <a href="LocateUsPage.html" id="locate" target="_self"><i class="fa-regular fa-compass"></i> <span>Locate Us</span></a>
+                <a href="LandingPage.html" id="login" target="_self"><i class="fa-solid fa-right-from-bracket"></i> <span>Sign Out</span></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <div class="loader">
+        <p class="loading-text">Loading...</p>
+    </div>
+    <section class="su_wrapper">
+        <div class="su_container">
+            <form action="PaymentPage.html" id="loginform" onsubmit="return validateReserve()">
+                <fieldset>
+                    <legend><b><h2><i class="fa-sharp fa-solid fa-user"></i> Reserve Your Ride</h2></b></legend>
+
+                    <div class="f_view">
+                        <h1>Book a car rental</h1>
+
+                        <div class="reserve_info">
+
+                            <div class="reserve_column">
+
+                                <input id="chosen_car" class="car_chosen" type="text" value="You have chosen: " disabled>
+                                <a href="CarPage.html"><button type="button" class="carbutton">Change car</button></a>
+                                <div class="reserve_row">
+                                    
+                                    <div class="reserve_item">
+                                        <label for="pickup"><b>Pickup Location:</b></label>
+                                        <select name="pickup" id="pickup">
+                                            <option value="">Choose a pickup location</option>
+                                            <option value="amk">Ang Mo Kio</option>
+                                            <option value="cl">Clementi</option>
+                                        </select>
+                                        <br>
+                                        <label for="pickup"></label><span id="pickupErr" class="error"></span>
+                                    </div>
+
+                                    <div class="reserve_item">
+                                        <label for="dropoff"><b>Dropoff Location:</b></label>
+                                        <select name="dropoff" id="dropoff">
+                                            <option value="">Choose a dropoff location</option>
+                                            <option value="amk">Ang Mo Kio</option>
+                                            <option value="cl">Clementi</option>
+                                        </select>
+                                        <br>
+                                        <label for="dropoff"></label><span id="dropoffErr" class="error"></span>
+                                    </div>
+                                
+                                </div>
+            
+                                <div class="reserve_row">
+
+                                    <div class="reserve_item">
+                                        <label for="date"><b>Pickup Date:</b></label>
+                                        <input type="date" id="date" name="date">
+                                        <br>
+                                        <label for="date"></label><span id="dateErr" class="error"></span>
+                                    </div>
+
+                                    <div class="reserve_item">
+                                        <label for="time"><b>Pickup Time:</b></label>
+                                        <input type="time" id="time" name="time">
+                                        <br>
+                                        <label for="time"></label><span id="timeErr" class="error"></span>
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="reserve_column1">
+                                <button type="submit" class="buttonstyle" type="button">Reserve</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success"></div>
+            
+                    <br><br>
+                    <a href="CarPage.html" style="color:white"><u>Back</u></a>
+ 
+                </fieldset>
+            </form>
+                
+          
+        </div>
+            
+    </section>
+
+    <footer class="privacy_wrapper">
+        <hr>
+
+        <div class="privacy_container">
+
+            <div class="p_content">
+
+                <div class="view_top">
+                    <img src="images/logo-transparent-svg3.svg" height="100%" width="100%">
+                    
+                </div>
+                <div class="p_view">
+                    <p><u>Our Locations</u></p>
+                    <p>53 Ang Mo Kio Ave 3, Singapore 569933</p>
+                    <p>3155 Commonwealth Ave W, #05-35/36/37, Singapore 129588</p>
+                </div>
+
+                <div class="p_view">
+                    <p><u>Our Socials</u></p>
+                    <p><b><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></b></p>
+                    <p><b><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i> X (previously Twitter)</i></a></b></p>
+                    <p><b><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></b></p>
+                </div>
+
+                <div class="p_view">
+                    <p><u>Contact Us</u></p>
+                    <p><b><a href="https://www.google.com" target="_blank"><i class="fa-solid fa-phone" target="_blank"></i> 61234567</a></b></p>
+                    <p><b><a href="mailto:azoomrental@helpdesk.org" target="_blank"><i class="fa-regular fa-envelope"></i> azoomrental@helpdesk.org</a></b></p>
+
+                    <p><b><a href="FAQPage.html" target="_blank">FAQS</a></b></p>
+
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="c_content">
+                
+                <div class="pp">
+                    <div class="ppheader">
+                        <p>Copyright&copy; 2024 AZoom Car Rental. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="pplinks">
+                        
+                        <a href="PrivacyPage.html">Privacy Policy</a>|
+                        <a href="TermsPage.html">Terms of Use</a>|
+                        <a href="AboutPage.html">About</a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script>
+    loader();
+    getcarinfo();
+</script>
+    </body>
+</html>
