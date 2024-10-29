@@ -1028,4 +1028,9 @@ width: 42%;
   width:30%;
 }
 
+@media screen and (max-width: 900px) {
+  .tooltip{
+    display: none;
+  }
+}
 
