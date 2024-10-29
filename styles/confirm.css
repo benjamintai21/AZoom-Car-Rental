@@ -1,0 +1,44 @@
+.c_wrapper{
+    padding-top: 6%;
+    min-height: 100vh;
+    /* Space for the fixed navbar */
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image:
+
+    linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(255,255,255,1)),
+    url('confirm.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c_container{
+    background-color: #6d7695;
+    opacity: 0.75;
+
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 4%;
+}
+.c_container_btm{
+    justify-content: center;
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.c_container img{
+    width:30%;
+}

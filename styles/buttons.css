@@ -1,0 +1,78 @@
+
+label {
+  display: inline-block;
+  text-align: left;
+}
+/* General button styles */
+
+/* Center alignment helper */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Fieldset style */
+fieldset {
+  height: 100%;
+  width: 70%;
+  border: 3px none white;
+  border-radius: 30px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 2px 2px 55px;
+}
+
+/* Input field style */
+
+button {
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+/* Button styles */
+button.buttonstyle {
+  background-color: #2c6ddc;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  margin: 20px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  
+}
+
+button.buttonstyle1 {
+  background-color: transparent;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  margin: 20px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #2c6ddc;
+  color: #2c6ddc;
+  cursor: pointer;
+}
+button.buttonstyle:hover{
+  background-color: #4e80d8;
+}
+button.buttonstyle1:hover{
+  background-color: #2c6ddc;
+  color: white;
+}
+

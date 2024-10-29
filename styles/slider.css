@@ -1,0 +1,269 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+@keyframes expand {
+  from{
+    height: 0px;
+  }
+  to{ 
+    height: 600px;
+  }
+}
+@keyframes contract {
+  from{
+    height: 600px;
+  }
+  to{ 
+    height: 0px;
+  }
+}
+
+
+
+.logo-container.expanded {
+    animation-name: expand;
+    animation-duration: 1.5s;
+}
+.logo-container.contract {
+    animation-name: contract;
+    animation-duration: 0.25s;
+}
+.logo-container{
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  transition: height 0.3s ease-in-out;
+  padding: 5px;
+}
+.content{
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    filter: brightness(1.2) contrast(1.1); /* Increase brightness and contrast */
+    border-style: none;;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(10, 10, 10, 0.5);
+}
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    
+  }
+  /* Styling when logo is clicked (expanded) */
+
+  
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 25px; /* Adjust size of the ghosting effect */
+    height: 100%;
+    content: "";
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    /* Slightly transparent white gradient */
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    /* Slightly transparent white gradient */
+}
+
+/* Add hover effect for smoother ghosting */
+.logos:hover:before,
+.logos:hover:after {
+    opacity: 0; /* Ghost effect fades when hovering */
+}
+  
+  .logos-slide img {
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.logos-slide img {
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.logos-slide img:hover {
+    background-color: #d2d2d2;
+    transform: scale(1.05); /* Scale up and rotate slightly */
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1); /* Add a shadow effect */
+     /* Increase brightness and contrast */
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    
+}
+.logos-slide img.clicked:hover {
+  background-color: initial; /* Reset to initial state */
+  opacity: initial;
+  transform: initial;
+  box-shadow: initial;
+  filter: initial;
+  cursor: pointer; /* Set cursor to default when clicked */
+}
+.car-item.active {
+  transform: scale(1.15); /* Enlarge the image for emphasis */
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1); /* Add a shadow effect */
+  filter: brightness(1.2) contrast(1.1);
+  border-radius: 20px;
+}
+.car-item.pause-animation{
+  animation-play-state: paused;
+}
+
+  
+.logos-slide {
+  display: inline-block;    /* Ensure it behaves like a single row of items */
+  white-space: nowrap;      /* Prevent wrapping of items */
+  animation-iteration-count: infinite;  /* Apply the slide animation */
+}
+.forshort{
+  animation-iteration-count: 1;
+}
+
+.pause-animation {
+   animation-play-state: paused;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+
+.car-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+.car-item.expanded {
+  height: 300px; /* Increased height when clicked */
+}
+
+.car-img {
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+  transition: transform 2.3s ease;
+  margin: 0px 60px;
+}
+
+.car-info-img{
+  cursor: pointer;
+  display: block;
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  transition: transform 2.3s ease;
+  margin: 0px 60px;
+}
+
+.divindiv {
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  color: #000; /* Changed color to black for visibility */
+  padding: 20px;
+  box-shadow: 0px 15px 10px rgba(10, 10, 10, 0.5);
+  border-radius: 5px;
+  border: #d2d2d2 1px solid;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  height: 600px;
+}
+
+.car-info1 {
+  flex-basis: 90%;
+  display: none;
+  position: relative; /* This ensures absolute positioning of .info_right works relative to this */
+  border: 1px rgb(113, 113, 134) solid;
+  box-shadow: 0px 15px 10px rgba(10, 10, 10, 0.5);
+  border-radius: 5px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.info_left {
+  flex: 0 1 55%;  /* Take up 40% of the width */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.info_right {
+  /* right: 15%;
+  top: 50%; */
+  /* transform: translateY(-50%);
+  max-width: 35%; */
+  flex: 0 1 45%;  /* Take up the remaining 60% of the width */
+  padding: 10px;
+  word-wrap: break-word;  /* Ensure long words break properly */
+  white-space: normal;    /* Allow text to wrap */
+  white-space: normal;
+  text-align: left;
+  margin:auto;
+}
+
+.car-info span {
+  font-weight: bold;
+}
+/* Add styles to scale the image or other effects for better interaction */
+.logos-slide img {
+  transition: opacity 0.5s ease;
+}
+
+.logos-slide img.hidden {
+  opacity: 0;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgb(133, 125, 125);
+}
+
+
+.hidden {
+  opacity: 0;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  position: relative;
+  top: 0;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
