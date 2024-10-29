@@ -45,6 +45,9 @@ h2{
   }
   
   @media screen and (max-width: 900px) {
+    .sidebarcontainer{
+      min-height: 0px;
+    }
     .sidebar {
       width: 100%;
       height: 100%;
@@ -52,6 +55,7 @@ h2{
       display: flex;
       justify-content: center;
       margin-left: 0%;
+      display: flex;
     }
     .sidebar a {float: left;}
     div.rightcontent {margin-left: 0;}
@@ -69,7 +73,10 @@ h2{
       height: 150px;
     }
     .cell h3{
-      font-size: 15px;
+      font-size: 80%;
+    }
+    .cell p{
+      font-size: 70%;
     }
     button{
       font-size: 10px;
